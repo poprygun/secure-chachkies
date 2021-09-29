@@ -1,0 +1,15 @@
+server:
+  ssl:
+    key-store: classpath:keystore/chachkies.p12
+    key-store-password: password
+    key-store-type: PKCS12
+    key-alias: chachkies
+    key-password: password
+    enabled: true
+  port: 8443
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
