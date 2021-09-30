@@ -26,3 +26,7 @@ Two roles are creted - `chachkies.user` and `chachkies.admin`
 
 `chachkies.user` credentials are `user1\password` has permission to access [protected chachkies endpoint](https://localhost:8443/api/chachkies)
 `chachkies.user` credentials are `admin1\password` has permission to access [protected actuator endpoint](https://localhost:8443/actuator)
+
+
+## [OIDC Well Known Endpoint](https://idp.int.identitysandbox.gov/.well-known/openid-configuration)
+
