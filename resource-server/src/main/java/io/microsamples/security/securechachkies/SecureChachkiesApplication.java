@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,6 +29,7 @@ class ChachkiesController {
 	private EasyRandom easyRandom = new EasyRandom();
 
 	@GetMapping(value = "/api/chachkies", produces = MediaType.APPLICATION_JSON_VALUE)
+
 	ResponseEntity<List<Chachkie>> chachkies(){
 		return ResponseEntity.ok(easyRandom.objects(Chachkie.class, 13).collect(Collectors.toList()));
 	}
